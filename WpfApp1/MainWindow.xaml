@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Автосервис"
+        Height="450"
+        Width="700">
+
+    <StackPanel Margin="20">
+
+        <TextBlock Text="Автосервис — управление клиентами"
+                   FontSize="22"
+                   FontWeight="Bold"
+                   Margin="5"/>
+
+        <TextBox Text="Введите ФИО клиента"/>
+
+        <TextBox Text="Введите марку автомобиля"/>
+
+        <Button Content="Добавить клиента"
+                Height="40"/>
+
+        <DataGrid Height="200" Margin="5">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Width="50"/>
+                <DataGridTextColumn Header="ФИО клиента" Width="*"/>
+                <DataGridTextColumn Header="Автомобиль" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </StackPanel>
+
+</Window>
